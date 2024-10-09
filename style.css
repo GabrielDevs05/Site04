@@ -55,12 +55,12 @@ header{
     margin-bottom: 10px;
 }
 
-h1, h3 , li{
+h1, h3 , li, p{
     color: white;
     text-shadow: -4px 3px 0 #3a50d9 -14 7px 0 #0a0e27;
 }
 
-ul{
+ul, p{
     margin-left: 20%;
     margin-right: 20%;
     text-align: start;

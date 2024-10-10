@@ -77,3 +77,16 @@ p {
     margin-right: 20%;
     text-align: center;
 }
+
+img{
+    border: solid white 2px;
+    border-radius: 12px;
+    height: 400px;
+}
+
+.cod{
+    align-items: center;
+    text-align: start;
+    margin-right: 30%;
+    margin-left: 40%;
+}

@@ -19,5 +19,43 @@
     <h1>C++</h1>
     <h3>Descrição da Linguagem de Programação C++</h3>
     <p>C++ é uma linguagem de programação de propósito geral, desenvolvida por Bjarne Stroustrup nos anos 1980 como uma extensão do C. Ela suporta programação procedural, orientada a objetos e genérica, oferecendo recursos como classes, herança, polimorfismo e templates. C++ é amplamente utilizada em desenvolvimento de sistemas, software de alta performance, jogos e aplicações em tempo real devido à sua eficiência e controle sobre recursos de hardware. Além disso, a linguagem possui uma rica biblioteca padrão, a STL (Standard Template Library), que facilita o desenvolvimento de algoritmos e estruturas de dados.</p>
+    <br>
+    <h3>Código C++ da IDE ARDUÍNO (imagem)</h3>
+    <img src="./assets/cpp_arduino.jpg" alt="Código C++ no Arduino IDE"><br>
+    <small>Fonte: </small>
+    <a href="https://www.arduino.cc/">Arduino IDE</a>
+    <br>
+    <h3>Exemplo de Código C++ da IDE ARDUÍNO (texto)</h3>
+    <p class="cod">// C++ code<br>
+        int pot1 = 0, pot2 = 0, res = 0;<br>
+        void setup()<br>
+        {<br>
+        pinMode(A0, INPUT);<br>
+        Serial.begin(9600);<br>
+        pinMode(A1, INPUT);<br>
+        pinMode(12, OUTPUT);<br>
+        pot1 = 0;<br>
+        pot2 = 0;<br>
+        res = 0;<br>
+        digitalWrite(12, LOW);<br>
+        }<br>
+        void loop()<br>
+        {<br>
+        pot1 += analogRead(A0);<br>
+        Serial.println("pot1-");<br>
+        Serial.println(pot1);<br>
+        pot2 += analogRead(A1);<br>
+        Serial.println("pot2");<br>
+        Serial.println(pot2);<br>
+        if (pot1 > pot2) {<br>
+        res += (pot1 + pot2);<br>
+        Serial.println("res");<br>
+        Serial.println(res);<br>
+        digitalWrite(12, HIGH);<br>
+        } else {<br>
+        digitalWrite(12, LOW);<br>
+        }<br>
+        delay(1); // Wait for 1 millisecond(s)<br>
+        }<br></p>
 </body>
 </html>

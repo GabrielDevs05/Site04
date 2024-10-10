@@ -79,7 +79,7 @@ p {
 }
 
 img{
-    border: solid white 2px;
+    border: solid rgb(3, 139, 187) 3px;
     border-radius: 12px;
     height: 400px;
 }

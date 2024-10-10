@@ -1,4 +1,4 @@
-body{
+body {
     text-align: center;
     background-color: rgb(3, 34, 63);
     margin: 0px;
@@ -8,14 +8,14 @@ body{
     /*---------------------------------------- Area dos Buttons ----------------------------------------*/
     /*--------------------------------------------------------------------------------------------------*/
     
-.btns{
+.btns {
     display: flex;
     column-gap: 2rem;
     background-color: var(--color-white-shade);
     justify-content: space-evenly;
 }
 
-.btn{
+.btn {
     background-color: var(--color-black);
     color: var(--color-white);
     cursor: pointer;
@@ -34,7 +34,7 @@ body{
     color: white;
     
 
-&:hover{
+&:hover {
     scale: 1.2;
     }
 }
@@ -47,7 +47,7 @@ body{
 
     /*--------------------------------------------------------------------------------------------------*/
 
-header{
+header {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -55,13 +55,25 @@ header{
     margin-bottom: 10px;
 }
 
-h1, h3 , li, p{
+h1, h3 , li, p, small, h4 {
     color: white;
     text-shadow: -4px 3px 0 #3a50d9 -14 7px 0 #0a0e27;
 }
 
-ul, p{
+ul, li {
     margin-left: 20%;
     margin-right: 20%;
     text-align: start;
+}
+
+a {
+    color: white;
+    border: solid white 1px;
+    border-radius: 4px;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
